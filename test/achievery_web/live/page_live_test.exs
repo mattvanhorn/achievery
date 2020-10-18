@@ -5,7 +5,7 @@ defmodule AchieveryWeb.PageLiveTest do
 
   test "disconnected and connected render", %{conn: conn} do
     {:ok, page_live, disconnected_html} = live(conn, "/")
-    assert disconnected_html =~ "Boilerplate Generator"
-    assert render(page_live) =~ "Boilerplate Generator"
+    assert disconnected_html =~ "Welcome to Achievery"
+    assert render(page_live) =~ "Welcome to Achievery"
   end
 end

@@ -21,6 +21,8 @@ defmodule AchieveryWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    get "/roadmap", PageController, :roadmap
+    get "/about", PageController, :about
   end
 
   # Other scopes may use custom stacks.
@@ -78,7 +80,7 @@ defmodule AchieveryWeb.Router do
     get "/users/confirm/:token", UserConfirmationController, :confirm
   end
 
-  if Mix.env == :dev do
+  if Mix.env() == :dev do
     forward "/sent_emails", Bamboo.SentEmailViewerPlug
   end
 end

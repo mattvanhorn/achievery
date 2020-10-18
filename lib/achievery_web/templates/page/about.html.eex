@@ -1,0 +1,42 @@
+<h1>About</h1>
+
+<h2>Principles</h2>
+<p>This system is primarily based on the idea that systems designed for neurotypical people often fail badly when used by people who are neurodiveerse. I'm starting it based on things that seem to work for me, and I will be continually iterating on it based on feedback I receive.</p>
+<p>This is not designed as a work tool - there are enough of those, and chances are you'll be forced to use a specific one by your employer anyway. This is about realizing the projects you want to do <em>for yourself</em>. Creative projects, or self-improvement, or travel, or physical fitness - all of these are things that have been hard for me, and that I've found ways to make easier.</p>
+
+<h2>Basic Concepts</h2>
+<p>The primary unit of organization in this system is the <em>goal</em>.</p>
+
+<h3>Goals</h3>
+<p>Goals are the things you want to accomplish. In the future, these may be categorized further, but for now goals are things like:
+<ul class="list-disc">
+  <li>Deploy this application</li>
+  <li>Get a black belt in jiu jitsu</li>
+  <li>Take a vacation where I can scuba dive</li>
+  <li>Learn to speak Portuguese</li>
+  <li>Write a science fiction novel</li>
+  <li>Lose 25 pandemic pounds</li>
+</ul>
+</p>
+
+<h3>Progress</h3>
+<p>One thing that I hve found works very well to keep my spirits and motivation high is to have reminders of the progress I am making.</p>
+
+<h4>Actions</h4>
+<p>The system will allow you to record actions you take towards your goals, whether they were planned or spontaneous. In the past I often failed to give myself credit for the things I did that weren't on my 'plan' even though they made me happy and got me closer to some of my goals. So here you can keep track of that stuff, and look at the list whenever you're feeling like you're not making progress.</p>
+
+<h4>Tasks</h4>
+<p>Tasks are the things we can identify as discrete steps towards our goals. For example - I want to get my black belt in jiu jitsu, but I've got to get my brown belt first, and before that I need to get some stripes on my purple belt. Or I might want to get my scuba certification, and find good dive spot for that vacation.</p>
+
+<h4>Practices</h4>
+<p>Practices are things that are continuous rather than discrete. Things that we should be doing to move towards our goals, but that we might neglect or forget. Again, in my case - I want to go train jiu jitsu at least three times a week. I want to spend a little time studying Portuguese every day. I want to watch what I eat.</p>
+
+<h4>Resources</h4>
+<p>Resources are the things we need in order to make progress. Time, materials, and people are the main categories. Money is another one - sometimes for materials, or sometimes just to have enough cushion to try something risky financially. I need a little money to run this app, I need a good teacher for jiu jitsu, and I need time to do all of these things.</p>
+
+<h2>Using Achievery</h2>
+<%= if @current_user do %>
+<p>You've already taken the first step by registering. Soon you will be able to add some goals.</p>
+<% else %>
+<p>First, <%= link "register an account", to: Routes.user_registration_path(@conn, :new) %></p>
+<% end %>

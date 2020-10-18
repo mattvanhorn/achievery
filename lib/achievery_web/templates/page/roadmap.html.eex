@@ -1,0 +1,51 @@
+<h1>Roadmap</h1>
+
+<h2>Basic Infrastructure</h2>
+<ul>
+  <li>Site is deployed</li>
+  <li>Users can create accounts and sign in and out</li>
+  <li>Users can manage their email address/password</li>
+  <li>Users can see the roadmap for future development</li>
+  <li>Users can start to learn how to use this system</li>
+</ul>
+
+<h2>Goals</h2>
+<ul>
+  <li>Users can list, add and remove goals</li>
+  <li>There is an explanation of what goals are and how they will be used</li>
+  <li>Attach tasks to goals</li>
+  <li>Attach practices to goals</li>
+  <li>Attach resources to goals</li>
+</ul>
+
+<h2>Progress</h2>
+<ul>
+  <li>Ability to record actions taken towards goals</li>
+  <li>Completing tasks auto-creates an action entry</li>
+  <li>Mark practice sessions done and create actions from them</li>
+  <li>Mark supplies collected - create actions from that</li>
+  <li>upload images of action/practices/etc</li>
+</ul>
+
+<h2>Social Features</h2>
+<ul>
+  <li>privacy controls</li>
+  <li>friends list</li>
+  <li>Give/get encouragement</li>
+  <li>Anti-harassment measures</li>
+</ul>
+
+<h2>Integrations</h2>
+<ul>
+  <li>Calendar integration for scheduling time resources</li>
+  <li>Social integration for sharing actions/goals</li>
+  <li>Communication integration for reminders/motivation</li>
+</ul>
+
+<h2>Future</h2>
+<ul>
+  <li>Implementation Intentions</li>
+  <li>Coping Plans</li>
+  <li>Sharing goals based on accomplishment</li>
+  <li>links to relevant scientific papers</li>
+</ul>

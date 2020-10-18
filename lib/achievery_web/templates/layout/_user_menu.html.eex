@@ -5,3 +5,5 @@
   <%= link "Sign In", to: Routes.user_session_path(@conn, :new), class: "btn btn-sm btn-link" %>
   <%= link "Get Started", to: Routes.user_registration_path(@conn, :new), class: "btn btn-sm btn-primary" %>
 <% end %>
+<%= link "About", to: Routes.page_path(@conn, :about), class: "btn btn-sm btn-link" %>
+<%= link "Roadmap", to: Routes.page_path(@conn, :roadmap), class: "btn btn-sm btn-link" %>
