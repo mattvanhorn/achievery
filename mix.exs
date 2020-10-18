@@ -1,10 +1,11 @@
 defmodule Achievery.MixProject do
   use Mix.Project
+
   def project do
     [
       app: :achievery,
       version: "0.1.0",
-      elixir: "~> 1.7",
+      elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -12,6 +13,7 @@ defmodule Achievery.MixProject do
       deps: deps()
     ]
   end
+
   # Configuration for the OTP application.
   #
   # Type `mix help compile.app` for more information.
@@ -21,6 +23,7 @@ defmodule Achievery.MixProject do
       extra_applications: [:logger, :runtime_tools]
     ]
   end
+
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
@@ -61,6 +64,7 @@ defmodule Achievery.MixProject do
       {:plug_cowboy, "~> 2.0"}
     ]
   end
+
   # Aliases are shortcuts or tasks specific to the current project.
   # For example, to install project dependencies and perform other setup tasks, run:
   #
