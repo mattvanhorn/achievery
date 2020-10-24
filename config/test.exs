@@ -16,10 +16,13 @@ config :achievery, Achievery.Repo,
 # you can enable the server option below.
 config :achievery, AchieveryWeb.Endpoint,
   http: [port: 4002],
-  server: false
+  server: true
+
+config :achievery, :sql_sandbox, true
 
 # Print only warnings and errors during test
 config :logger, level: :warn
 
-config :achievery, Achievery.Mailer,
-  adapter: Bamboo.TestAdapter
+config :achievery, Achievery.Mailer, adapter: Bamboo.TestAdapter
+
+config :wallaby, otp_app: :achievery
