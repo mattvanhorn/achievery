@@ -32,6 +32,9 @@ defmodule Achievery.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      # Wallaby for BDD
+      {:wallaby, "~> 0.22.0", [runtime: false, only: :test]},
+
       # Bamboo for Emailing
       {:bamboo, "~> 1.5"},
       {:premailex, "~> 0.3.0"},
